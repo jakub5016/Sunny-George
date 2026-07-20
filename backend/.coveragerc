@@ -1,0 +1,19 @@
+[run]
+source = .
+omit =
+    */migrations/*
+    */tests/*
+    */test_*.py
+    */management/commands/*
+    manage.py
+    config/wsgi.py
+    config/asgi.py
+    config/celery.py
+
+[report]
+show_missing = true
+skip_covered = false
+precision = 1
+exclude_lines =
+    pragma: no cover
+    if TYPE_CHECKING:
