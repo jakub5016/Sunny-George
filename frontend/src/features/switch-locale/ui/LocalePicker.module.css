@@ -1,0 +1,96 @@
+.picker {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: 40px;
+  padding: 0 var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background-color: var(--color-bg-muted);
+  color: var(--color-text-heading);
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.trigger:hover,
+.triggerOpen {
+  background-color: var(--color-bg-input);
+  border-color: var(--color-solar-yellow);
+}
+
+.trigger:focus-visible {
+  outline: 2px solid var(--color-solar-yellow);
+  outline-offset: 2px;
+}
+
+.triggerFlag {
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + var(--space-xs));
+  right: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  padding: var(--space-xs);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-surface);
+  box-shadow: var(--shadow-elevated);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: calc(var(--radius-sm) - 2px);
+  background-color: transparent;
+  color: var(--color-text-body);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.option:hover {
+  background-color: var(--color-bg-muted);
+}
+
+.optionActive {
+  background-color: var(--color-solar-yellow-light);
+  color: var(--color-text-heading);
+  font-weight: 600;
+}
+
+.option:focus-visible {
+  outline: 2px solid var(--color-solar-yellow);
+  outline-offset: -2px;
+}
+
+.optionFlag {
+  flex-shrink: 0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .trigger {
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,11 @@
+.banner {
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-solar-yellow-light);
+  border-left: 3px solid var(--color-error);
+}
+
+.message {
+  font-size: 0.9375rem;
+  color: var(--color-error);
+}

@@ -1,0 +1,33 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-md);
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: var(--space-md) var(--page-padding) var(--space-lg);
+  min-height: 0;
+}
+
+.statusBanner {
+  flex-shrink: 0;
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-muted);
+  font-size: 0.9375rem;
+  color: var(--color-text-heading);
+  text-align: center;
+}
+
+.endedBanner {
+  background-color: var(--color-solar-yellow-light);
+  border-left: 3px solid var(--color-solar-yellow);
+}

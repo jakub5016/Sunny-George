@@ -1,0 +1,93 @@
+:root,
+[data-theme="light"] {
+  /* Brand */
+  --color-solar-yellow: #ffd700;
+  --color-solar-yellow-hover: #e6c200;
+  --color-solar-yellow-light: #fff8dc;
+  --color-deep-navy: #0a2342;
+  --color-navy-muted: #1a3a5c;
+  --color-error: #dc2626;
+  --color-success: #16a34a;
+
+  /* Semantic */
+  --color-bg-page: #ffffff;
+  --color-bg-surface: #ffffff;
+  --color-bg-muted: #e8edf2;
+  --color-bg-input: #e8edf2;
+  --color-bg-composer: #f4f6f8;
+  --color-text-body: #4a4a4a;
+  --color-text-heading: #0a2342;
+  --color-text-muted: #6b7280;
+  --color-text-inverse: #ffffff;
+  --color-border: #d1d5db;
+  --color-bubble-user-bg: #0a2342;
+  --color-bubble-user-text: #ffffff;
+  --color-bubble-assistant-bg: #e8edf2;
+  --color-bubble-assistant-text: #4a4a4a;
+  --color-role-user: #1a3a5c;
+  --color-role-assistant: #0a2342;
+
+  /* Legacy aliases */
+  --color-navy-tint: var(--color-bg-muted);
+  --color-pure-white: var(--color-bg-surface);
+  --color-graphite: var(--color-text-body);
+
+  /* Typography */
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 40px;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-card: 0 2px 8px rgba(10, 35, 66, 0.08);
+  --shadow-elevated: 0 4px 16px rgba(10, 35, 66, 0.12);
+
+  /* Layout */
+  --content-max-width: 960px;
+  --page-padding: 24px;
+}
+
+[data-theme="dark"] {
+  --color-solar-yellow-light: #2a2610;
+  --color-deep-navy: #e8edf2;
+  --color-navy-muted: #9cb3cc;
+
+  --color-bg-page: #0a1628;
+  --color-bg-surface: #12243d;
+  --color-bg-muted: #1a3050;
+  --color-bg-input: #1a3050;
+  --color-bg-composer: #0f1f35;
+  --color-text-body: #c8d4e0;
+  --color-text-heading: #e8edf2;
+  --color-text-muted: #8ba3be;
+  --color-text-inverse: #ffffff;
+  --color-border: #2a4a6a;
+  --color-bubble-user-bg: #1a3a5c;
+  --color-bubble-user-text: #ffffff;
+  --color-bubble-assistant-bg: #1e3a5f;
+  --color-bubble-assistant-text: #c8d4e0;
+  --color-role-user: #8ba3be;
+  --color-role-assistant: #e8edf2;
+
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-elevated: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+  :root,
+  [data-theme="light"],
+  [data-theme="dark"] {
+    --page-padding: 40px;
+  }
+}
